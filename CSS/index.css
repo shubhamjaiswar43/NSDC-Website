@@ -1,0 +1,198 @@
+@import url('https://fonts.cdnfonts.com/css/nasalization');
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+html {
+    /* overflow-x: hidden; */
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #27283c;
+    color: white;
+}
+.out-top-bar{
+    width: 100%;
+}
+.top-bar {
+    width: 100%;
+    display: block;
+    margin-top: 20px;
+    height: 25px;
+    background-color: #343551;
+}
+
+.nav-bar {
+    height: 130px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.nav-bar>div {
+    display: flex;
+}
+
+.nav-bar>div>img {
+    height: 120px;
+    margin: auto;
+    margin-right: 10px;
+}
+
+.nav-bar>div>h1 {
+    margin-left: 10px;
+    font-family: 'nasalization', sans-serif;
+}
+
+#c1 {
+    height: 60px;
+    width: 60px;
+    border-radius: 30px;
+}
+
+.nav-bar>ul {
+    display: flex;
+    list-style: none;
+    margin: auto;
+}
+
+.nav-bar>ul>li>a {
+    text-decoration: none;
+    margin: 30px;
+    color: white;
+
+}
+
+#Home {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
+#c2 {
+    height: 90px;
+    width: 90px;
+    border-radius: 45px;
+    position: absolute;
+    left: 8%;
+    bottom: 40%;
+    z-index: -1;
+}
+
+#c3 {
+    height: 80px;
+    width: 80px;
+    border-radius: 40px;
+    position: absolute;
+    right: 6%;
+    bottom: 55%;
+    z-index: -1;
+}
+
+#Home>img {
+    width: 300px;
+    height: 300px;
+}
+
+#Home>button {
+    display: flex;
+    background-color: #5d5a91;
+    align-items: center;
+    padding: 5px 10px;
+    font-weight: bolder;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    transition: all 500ms;
+}
+
+#Home>button:hover{
+    transform: scale(1.1);
+}
+
+#Home>button>a {
+    text-decoration: none;
+    padding: 1px 5px;
+    color: #fff;
+}
+
+.arrow {
+    width: 30px;
+    height: 30px;
+    background-color: #9394b2;
+    border: 2px solid #9c9fc8;
+    border-radius: 15px;
+}
+
+.arrow>i {
+    display: inline-block;
+    margin: 8px 0px;
+    filter: invert(100%);
+    transform: scale(1.5);
+}
+
+/* #Home::after {
+    content: "";
+    position: absolute;
+    width: 2800px;
+    height: 2800px;
+    border-radius: 0 0 100% 0;
+    transform: rotate(45deg);
+    background-color: #27283c;
+    bottom: -530px;
+    z-index: -1;
+} */
+
+#Home+div {
+    z-index: -2;
+    position: relative;
+    /* top: -150px; */
+    height: 300px;
+    background-image: linear-gradient(to right, #ff8f99, #d978c7, #9156fc);
+}
+
+/* #Home+div::before,#Home+div::after{
+    content: "";
+    position: absolute;
+} */
+#About-Us {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.para {
+    margin: 0px;
+    padding: 2px;
+    text-align: center;
+    width: 40%;
+    font-size: 1.2em;
+}
+
+.para:nth-child(2) {
+    margin-top: 30px;
+}
+
+.para:last-child {
+    margin-bottom: 50px;
+}
+
+.primary {
+    margin: auto;
+    text-align: center;
+}
+
+.text {
+    padding-bottom: 20px;
+}
+
+
+.circle {
+    background-image: linear-gradient(to bottom right, #424362, #2d2e40, #151515);
+    margin: auto;
+    filter: blur(1.8px);
+}
