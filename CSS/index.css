@@ -109,6 +109,7 @@ body {
     margin-bottom: 10px;
     border-radius: 10px;
     transition: all 500ms;
+    cursor: pointer;
 }
 
 #Home>button:hover {
@@ -151,7 +152,7 @@ body {
 #Home+div {
     z-index: -2;
     position: relative;
-    top: -130px;
+    top: -150px;
     height: 500px;
     background-image: linear-gradient(to right, #ff8f99, #d978c7, #9156fc);
 }
@@ -203,7 +204,8 @@ body {
     filter: blur(1.8px);
 }
 
-.upper,.lower{
+.upper,
+.lower {
     overflow: hidden;
 }
 
